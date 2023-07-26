@@ -1,0 +1,457 @@
+    /* <!-- HTML !
+
+
+    /* CSS */
+    .btn {
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .btn:before {
+        content: "";
+        background: linear-gradient(45deg,
+                #f3e4f3,
+                #ffffff,
+                #268faa,
+                #ffffff,
+                #ffffff,
+                #fafbff,
+                #ffffff,
+                #fbf0f9,
+                #b3c8d2);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-btn 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing-btn {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .btn:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        left: 0;
+        top: 0;
+        /* border-radius: 10px; */
+    }
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+        min-height: 190vh;
+        background-color: #c594aa;
+        /* background: linear-gradient(0deg,
+                #9c81ac,
+                #835c8a 0%,
+                #6d3e6b 50%,
+                #411d37 100%);  */
+        /* background: linear-gradient(
+          0deg, 
+          #291223,
+          #4C2A4A 0%,
+          #69486F 50%,
+          #846C92 100%);   */
+    }
+
+    header {
+        background: #131313;
+
+        height: 50px;
+        width: 100%;
+        clear: both;
+        content: "";
+        display: table;
+
+    }
+/*  */
+    /* pie de pagina  */
+    .footer {
+        /* background-color: #220522; */
+        background: #131313;
+
+
+        /* color original */
+        /* background: #180D1C; */
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        /* fondo luminoso */
+        /* text-shadow: 0 0 50px #ccc500; */
+        /* color de texto */
+        color: #c57d56;
+    }
+    .card .details {
+        position: relative;
+        min-width: 300px;
+        background: #8f6277;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100px;
+        height: 100%;
+        padding: 20px;
+        color: #fffbfe;
+    }
+    /* menú de navegacion */
+    .menu {
+        /* width: 900px; */
+        margin: 0 auto;
+        padding: 0;
+        width: 95%;
+    }
+
+    nav {
+        float: right;
+
+    }
+    /* .contenedor {
+    background-color: transparent;
+  
+  
+  } */
+
+    .marca {
+        background-color: transparent;
+        width: 80px;
+        height: 50px;
+        left: 89px;
+        float: left;
+        padding: 10px;
+        /* text-shadow: 0 0 50px #ffffff; */
+        color: #c57d56;
+
+    }
+
+    .Marca {
+        list-style: none;
+        color: #eeeeeb;
+        mix-blend-mode: screen; 
+        -webkit-animation: shine 1s infinite;
+         animation: shine 1s infinite;
+
+        /* box-shadow: 1.5px 1.5px 40px rgb(231, 255, 20); */
+        text-shadow: 0 0 19px #58e6ff;
+
+        -webkit-text-stroke: 1px #ffffff;
+
+        /* font-weight: 100; */
+        /* font-family: cursive; */
+
+        transition: 2s;
+    }
+
+    a {
+        color: #c57d56;
+
+    }
+
+    nav ul li {
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        list-style: none;
+        margin-left: 25px;
+        padding: 17px 0;
+        float: left;
+
+    }
+
+    nav ul li:hover {
+/* transition: 2s; */
+        text-shadow: 0 0 1px #58e6ff;
+        /* background-color: #ea00ff;
+        
+        */
+box-shadow: 0 0  10px 0;
+/* box-shadow: #4bb4e9; */
+/* border-color: #58e6ff; */
+/* box-shadow: inset 0px 0px 30px 30px rgba(red, green, blue, alpha); */
+    }
+
+
+
+    /*menu estilo*/
+    nav ul li a {
+        /* padding: 0; */
+        text-decoration: none;
+        color: #c57d56;
+
+        /* color: rgb(227, 255, 19); */
+
+        /* text-shadow: 12 12 80px #fff82a; */
+
+
+    }
+
+    /*estilo de menu after*/
+    nav ul li a:hover {
+        /* background-color: transparent; */
+        
+        text-decoration: none;
+        color: hwb(0 100% 0%);
+        cursor: pointer;
+        transition: 1s;
+
+    }
+
+    .lista h1 {
+        list-style: none;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .lista>li {
+        float: left;
+    }
+
+    .lista li ul {
+
+        display: none;
+        position: absolute;
+        min-width: 140px;
+
+    }
+
+    .lista li:hover>ul {
+
+        display: block;
+
+    }
+
+    /* .main {
+        top: 0%;
+        left: 0%;
+        position: absolute;
+    } */
+
+    .cont {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow: scroll;
+
+    }
+
+    .cont::-webkit-scrollbar {
+        display: none;
+        /* Oculta el scrollbar */
+    }
+
+
+    /* tarjeta de los  productos */
+    .card {
+        flex: 1 0 auto;
+        margin: 0 50px;
+        /* text-align: center; */
+        /*siempre hay que poner esto,esto hará  que el formulario se ordene*/
+        margin-top: 200px;
+        /* esto es para que el card tenga un margen de 3 cm */
+        margin: 6rem;
+        /* height: 500px;
+        width: 500px; */
+        /* margin: auto; */
+        /* display: flex; */
+        align-items: center;
+        /* top: 20%; */
+        /* esta para que los elementos del card este n una altura  */
+        /* padding: 3rem; */
+
+        display: flex;
+        width: 300px;
+        height: 380px;
+        /* color de tarjeta */
+        background-color: #fdcae1;
+        box-shadow: 0 1px 50px rgba(49, 15, 34, 0.613);
+        /* box-shadow: #06cdf0f6; */
+        /* box-shadow:0 20px 40px  #58e6ff(10, 196, 199, 0.15); */
+        /* oculta los detalles */
+        overflow: hidden;
+    }
+
+    .card:hover {
+        /* box-shadow: #411d37; */
+        width: 600px;
+    }
+
+    .card .imgBox {
+        position: relative;
+        min-width: 300px;
+        width: 300px;
+        height: 100%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    .card:hover .imgBox {
+        transform: rotate(15deg);
+    }
+
+    .card .imgBox img {
+        width: 85%;
+        /* background-position-x: right; */
+    }
+
+
+
+
+    .card .details .title small {
+        font-weight: 200;
+        font-size: 0.8em;
+    }
+
+    .crd .details h4 {
+        font-weight: 0.9em;
+    }
+
+    /* las letras se vuelven chicas  */
+    .card .details .descripcion {
+        font-size: 0.8em;
+        font-weight: 200;
+    }
+
+    /* EL boton deja de ser ancho */
+    .card .details .buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card .details .buy .price {
+        font-size: 1.6em;
+    }
+
+    /* boton  */
+    .card .details .buy .btn {
+        background: #fff;
+        padding: 0.5em 0.8em;
+        text-transform: uppercase;
+    }
+
+    /* el color azul en el boton del link desaprece  */
+    .card .details .buy .btn a {
+        text-decoration: none;
+        color: #4bb4e9;
+    }
+
+    /*boton*/
+    .btn:hover {
+        border-radius: 5px;
+
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+
+    }
+
+
+    /* en una esquina muestra un triangulito  */
+
+    .card .details::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+
+        border-left: 10px solid #fff;
+    }
+
+    .card:hover {
+
+        /* box-shadow: 0 2 40px #4d3b4360; */
+        box-shadow: 0 5px 50px #00445c64;
+        /* box-shadow: 0 0 100px #fdcae1; */
+
+    }
+
+
+    /* estilo de texto en pie de pagina */
+    /* 
+    h1::before {
+        content: attr(data-heading);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-decoration: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+        /* -webkit-background-clip: text; */
+    /* color: transparent; */
+    /* mix-blend-mode: screen; */
+    /* -webkit-animation: shine 1s infinite;
+        animation: shine 3s infinite;
+        background-size: 200%;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @-webkit-keyframes shine {
+        0% {
+            background-position: -100%;
+        }
+
+        100% {
+            background-position: 100%;
+        }
+    }
+
+    h1{
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        /* font-size: vw;
+        margin: 0;
+        font-family: '¡somos únicos en los mejores sabores !', serif;
+        font-weight: 700; 
+    } */

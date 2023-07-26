@@ -1,0 +1,19 @@
+/* body{
+font-family: Arial;
+font-size: 13px;
+
+} */
+form{
+    text-align: left;
+    height: auto;
+    width: auto;
+    border: 1px solid #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    position: fixed;
+    left: 400px;
+
+}
+
+

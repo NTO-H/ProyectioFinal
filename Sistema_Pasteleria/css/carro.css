@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la tabla y el contenedor */
+.table-container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.centered-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.centered-table th,
+.centered-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.centered-table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para las imágenes */
+.centered-table img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para el formulario de cantidad */
+.cantidad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cantidad-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.cantidad-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para el botón "Eliminar" */
+.submit-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor del botón "Volver" */
+.volver-catalogo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Estilos para el total de precio y cantidad */
+.total-precio-cantidad {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
